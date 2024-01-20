@@ -1,0 +1,158 @@
+IQ-TREE 2.2.2.6 COVID-edition built May 27 2023
+
+Input file name: strain_tree/Nmag_v1.All.SNP.mfa
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 512851
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 9 sequences with 115181 nucleotide sites
+Number of constant sites: 0 (= 0% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 0 (= 0% of all sites)
+Number of parsimony informative sites: 114899
+Number of distinct site patterns: 1082
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+ASC
+
+Rate parameter R:
+
+  A-C: 1.0159
+  A-G: 9.0521
+  A-T: 0.8319
+  C-G: 0.7203
+  C-T: 9.1360
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.242
+  pi(C) = 0.2589
+  pi(G) = 0.2557
+  pi(T) = 0.2435
+
+Rate matrix Q:
+
+  A    -1.023    0.0968    0.8518   0.07457
+  C   0.09048   -0.9771   0.06778    0.8188
+  G    0.8061   0.06863   -0.9644   0.08963
+  T   0.07409    0.8705    0.0941    -1.039
+
+Model of rate heterogeneity: Uniform
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -655217.0144 (s.e. 866.9475)
+Unconstrained log-likelihood (without tree): -559675.3120
+Number of free parameters (#branches + #model parameters): 23
+Akaike information criterion (AIC) score: 1310480.0288
+Corrected Akaike information criterion (AICc) score: 1310480.0384
+Bayesian information criterion (BIC) score: 1310702.0768
+
+Total tree length (sum of branch lengths): 1.4544
+Sum of internal branch lengths: 1.0907 (74.9930% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Nm_NRRL_64651' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++--Nm_NRRL_64651
+|
++--NRRL_64651
+|
+|                                                        +--NRRL_64650
+|                                                     +--| (100/100)
+|                                                     |  +----Nm_GKMAG720-2
+|                                                  +--| (99.6/98)
+|                                                  |  +--Nm_MAFRCA_Stroma_02
+|                                              +---| (100/100)
+|                                              |   +--Nm_starMAG
+|                    +-------------------------| (100/100)
+|                    |                         +--Nm_GKMAG5
+|  +-----------------| (100/100)
+|  |                 +**NRRL_64652
++--| (100/100)
+   +--Nm_SH1-1
+
+Tree in newick format:
+
+(Nm_NRRL_64651:0.0004701692,NRRL_64651:0.0004602664,((((((NRRL_64650:0.0038232129,Nm_GKMAG720-2:0.1165118598)100/100:0.0351342954,Nm_MAFRCA_Stroma_02:0.0738183507)99.6/98:0.0223921744,Nm_starMAG:0.0589890023)100/100:0.0992586420,Nm_GKMAG5:0.0456278453)100/100:0.5323578462,NRRL_64652:0.0000018928)100/100:0.3685900669,Nm_SH1-1:0.0639989814)100/100:0.0329645942);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -655217.01143190
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.00000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Nm_NRRL_64651
+|
++--NRRL_64651
+|
+|                                                        +--NRRL_64650
+|                                                     +--| (100)
+|                                                     |  +----Nm_GKMAG720-2
+|                                                  +--| (98)
+|                                                  |  +--Nm_MAFRCA_Stroma_02
+|                                              +---| (100)
+|                                              |   +--Nm_starMAG
+|                    +-------------------------| (100)
+|                    |                         +--Nm_GKMAG5
+|  +-----------------| (100)
+|  |                 +**NRRL_64652
++--| (100)
+   +--Nm_SH1-1
+
+
+Consensus tree in newick format: 
+
+(Nm_NRRL_64651:0.0004705916,NRRL_64651:0.0004599819,((((((NRRL_64650:0.0038250147,Nm_GKMAG720-2:0.1165060853)100:0.0351329342,Nm_MAFRCA_Stroma_02:0.0738146647)98:0.0223912307,Nm_starMAG:0.0589870767)100:0.0992538411,Nm_GKMAG5:0.0456287705)100:0.5323404550,NRRL_64652:0.0000018241)100:0.3685825092,Nm_SH1-1:0.0639979195)100:0.0329645103);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t strain_tree/Nmag_v1.All.SNP.mfa.treefile -m "GTR{1.01593,9.0521,0.831947,0.720291,9.13597}+F{0.241956,0.258874,0.255659,0.24351}+ASC" --length 115181
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s strain_tree/Nmag_v1.All.SNP.mfa --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s strain_tree/Nmag_v1.All.SNP.mfa --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Jan 19 16:56:42 2024
+Total CPU time used: 46.015756 seconds (0h:0m:46s)
+Total wall-clock time used: 19.05007911 seconds (0h:0m:19s)
+
